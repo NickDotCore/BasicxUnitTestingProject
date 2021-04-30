@@ -1,0 +1,7 @@
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\obj\Debug\DemoLibrary.csprojAssemblyReference.cache
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\obj\Debug\DemoLibrary.csproj.CoreCompileInputs.cache
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\bin\Debug\DemoLibrary.exe.config
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\bin\Debug\DemoLibrary.exe
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\bin\Debug\DemoLibrary.pdb
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\obj\Debug\DemoLibrary.exe
+\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\DemoLibrary\obj\Debug\DemoLibrary.pdb
