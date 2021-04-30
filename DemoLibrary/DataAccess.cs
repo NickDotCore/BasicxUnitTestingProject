@@ -13,11 +13,11 @@ namespace DemoLibrary
 {
     public static class DataAccess
     {
-        private static string personTextFile = @"\\vsfile01\Personal\Nicholas Browning\Documents\Other Projects\xUnitTutorial\UserInterface\PersonText.txt";
+        private static string personTextFile = "PersonText.txt";
 
-        public static void AddNewPerson(Person person)
+        public static void AddNewPerson(PersonModel person)
         {
-            List<Person> people = GetAllPeople();
+            List<PersonModel> people = GetAllPeople();
 
             AddPersonToPeopleList(people, person);
 
@@ -26,7 +26,7 @@ namespace DemoLibrary
             File.WriteAllLines(personTextFile, lines);
         }
 
-        public static void AddPersonToPeopleList(List<Person> people, Person person)
+        public static void AddPersonToPeopleList(List<PersonModel> people, PersonModel person)
         {
             if (string.IsNullOrWhiteSpace(person.FirstName))
             {
@@ -41,11 +41,11 @@ namespace DemoLibrary
             people.Add(person);
         }
 
-        public static List<string> ConvertModelsToCSV(List<Person> people)
+        public static List<string> ConvertModelsToCSV(List<PersonModel> people)
         {
             List<string> output = new List<string>();
 
-            foreach (Person user in people)
+            foreach (PersonModel user in people)
             {
                 output.Add($"{ user.FirstName },{ user.LastName }");
             }
@@ -53,15 +53,15 @@ namespace DemoLibrary
             return output;
         }
 
-        public static List<Person> GetAllPeople()
+        public static List<PersonModel> GetAllPeople()
         {
-            List<Person> output = new List<Person>();
+            List<PersonModel> output = new List<PersonModel>();
             string[] content = File.ReadAllLines(personTextFile);
 
             foreach (string line in content)
             {
                 string[] data = line.Split(',');
-                output.Add(new Person { FirstName = data[0], LastName = data[1] });
+                output.Add(new PersonModel { FirstName = data[0], LastName = data[1] });
             }
 
             return output;

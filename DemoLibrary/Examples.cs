@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    class Examples
+    public static class Examples
     {
         public static string ExampleLoadTextFile(string file)
         {
